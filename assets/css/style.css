@@ -1633,3 +1633,27 @@ section {
 #footer .credits a:hover {
   color: #0a98c0;
 }
+
+
+/* ------ desktop only ----------- */
+@media only screen and (min-width: 768px) {
+  .dcol-1 {width: 8.33%;}
+  .dcol-2 {width: 16.66%;}
+  .dcol-3 {width: 25%;}
+  .dcol-4 {width: 33.33%;}
+  .dcol-5 {width: 41.66%;}
+  .dcol-6 {width: 50%;}
+  .dcol-7 {width: 58.33%;}
+  .dcol-8 {width: 66.66%;}
+  .dcol-9 {width: 75%;}
+  .dcol-10 {width: 83.33%;}
+  .dcol-11 {width: 91.66%;}
+  .dcol-12 {width: 100%;}
+}
+
+/* login btn */
+#login-btn:hover{
+  color : white;
+  transition: 0.5s;
+  background-color:#0a98c0;
+}
