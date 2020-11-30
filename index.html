@@ -79,7 +79,7 @@
 
           <div class="col-12 intro-info order-md-first order-last " data-aos="zoom-in" data-aos-delay="100">
             <h2 class="text-center col-12">PEMIRA <span>2020!</span></h2>
-            <a href="#" class="btn btn-outline-primary btn-block btn-lg" data-aos-delay="100" id="login-btn">LOGIN TO VOTE</a>
+            <button type="button" class="btn btn-outline-primary btn-block btn-lg" data-toggle="modal" data-target="#modal-login" data-aos-delay="100" id="login-btn">LOGIN TO VOTE</button>
           </div>
         <!-- <div class="col-md-6 intro-img order-md-last order-first" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/intro-img.svg" alt="" class="img-fluid">
@@ -88,6 +88,42 @@
     </div>
     
   </section><!-- End Hero -->
+
+  <!-- modal login -->
+  <div class="modal fade" id="modal-login">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">LOGIN</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+            </div>
+            
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary btn-block" style="background-color: #0a98c0;">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- end modal login -->
 
   <!-- ======= Hero Section ======= -->
   <main id="main">
@@ -592,6 +628,9 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
