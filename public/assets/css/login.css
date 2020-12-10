@@ -1,0 +1,107 @@
+body{
+    background: #f5f8fd url("../img/bg-login.jpg") center top no-repeat;
+    background-size: cover;
+}
+
+/*--------------------------------------------------------------
+# log Section
+--------------------------------------------------------------*/
+#log {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #log {
+      height: 100%;
+      width: 100%;
+      padding: 100px 0 60px 0;
+      
+    }
+    body{
+        background: #f5f8fd url("../img/bg-login-mb.jpg") center no-repeat;
+      background-position: center center;
+  
+      /* Background image doesn't tile */
+      background-repeat: no-repeat;
+      
+      /* Background image is fixed in the viewport so that it doesn't move when 
+         the content's height is greater than the image's height */
+      background-attachment: fixed;
+      
+      /* This is what makes the background image rescale based
+         on the container's size */
+      background-size: cover;
+      
+      /* Set a background color that will be displayed
+         while the background image is loading */
+      background-color: #464646;
+    }
+    #log .container {
+      height: auto !important;
+    }
+    #log .intro-img {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #log .intro-info {
+      padding-top: 80px;
+    }
+
+    
+    
+  }
+  
+  @media (max-width: 767px) {
+    #log .intro-info {
+      text-align: center;
+      padding-top: 40px;
+    }
+
+
+  }
+  
+  #log .intro-info h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #log .intro-info h2 span {
+    color: #1bb1dc;
+  }
+  
+  @media (max-width: 767px) {
+    #log .intro-info h2 {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  #log .intro-info .btn-get-started, #log .intro-info .btn-services {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #1bb1dc;
+    color: #fff;
+  }
+  
+  #log .intro-info .btn-get-started:hover, #log .intro-info .btn-services:hover {
+    background: #0a98c0;
+  }
+
+  .jarak-input {
+    margin-top: 50%;
+}
