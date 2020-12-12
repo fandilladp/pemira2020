@@ -61,7 +61,6 @@ h1 {
 	font-size: 80px;
 	font-weight: 800;
 	line-height: 80px;
-	letter-spacing: -0.08em;
 	color: #161a1b; 
 }
 
@@ -75,7 +74,7 @@ h2 {
 }
 
 #countdown div span {
-	display:block;
+	display: block;
 	font-size: 50px;
 	line-height: 50px;
 	letter-spacing: initial;
@@ -85,7 +84,7 @@ h2 {
 
 #countdown div {
 	display:inline-block;
-    margin: 0 34px;
+    margin: 0 40px;
 }
 
 .sub-title {
@@ -140,7 +139,7 @@ h2 {
 
 /* Background */
 .background {
-  background: url(../images/background.jpg) no-repeat 50% 100%;
+  background: url(../images/bg.jpg) no-repeat 50% 100%;
   bottom: -20px;
   background-size: cover;
   position: absolute;
@@ -165,14 +164,24 @@ h2 {
 	position: absolute;
 	z-index: 2;
 	top: 10%;
+	margin-top: 20px;
+}
+
+.logo{
+	margin: 0;
+}
+
+.logo img{
+	height: 100px;
+	margin: 20px;
 }
 
 .line {
 	display: block;
 	margin: 0 auto;
-	width: 60px;
-	height: 1px;
-	background: #00d9ec;
+	width: 100px;
+	height: 2px;
+	background: #ecdc00;
 	margin-top: 10px;
 }
 
@@ -225,10 +234,17 @@ h2 {
 	text-decoration: none;
 	color: #161a1b;
 	padding-bottom: 8px;
-	font-size: 15px;
+	font-size: 16px;
 }
 
-.contact a.mail::after {
+.contact a.instagram{
+	text-decoration: none;
+	color: #161a1b;
+	padding-bottom: 8px;
+	font-size: 16px;
+}
+
+/*.contact a.mail::after {
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -401,17 +417,22 @@ h2 {
 		right: 0;
 		top: 0;
 	}
+
+	.logo img{
+		height: 20px;
+	}
 }
 
 
 /* Landscape Phone */
-@media all and (min-width: 400px) {
+@media all and (max-width: 400px) {
 	/* HERO */
 	h1 { font-size: 40px; line-height: 40px; }
-	#countdown div span {font-size: 24px; line-height: 34px;}
-	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
+	#countdown div span {font-size: 18px; line-height: 34px;}
+	.sub-title { font-size: 14px; line-height: ; margin-top: 20px; }
 	/* TITLE & CONTACT */
-	.title { top: 15%;}
+	.title { top: 15%; margin: 20px 0 0 0;}
+	.title h2{font-size: 14px;}
 	.contact .icons { margin-bottom: 0px; }
 	/* SIZES */
 	.sphere img{
@@ -478,6 +499,10 @@ h2 {
 		position: absolute;
 		right: 0;
 		top: 0;
+	}
+
+	.logo img{
+		height: 60px;
 	}
 }
 
@@ -566,7 +591,7 @@ h2 {
 
 @media all and (min-width: 900px) {
 	/* HERO */
-	h1 { font-size: 120px; line-height: 120px; }
+	h1 { font-size: 60px; line-height: 60px; }
 
 	#countdown div span {font-size: 34px; line-height: 34px;}
 	
@@ -649,9 +674,10 @@ h2 {
 
 @media all and (min-width: 1200px) {
 	/* HERO */
-	h1 { font-size: 150px; line-height: 150px; }
+	h1 { font-size: 80px; line-height: 80px; }
 	#countdown div span {font-size: 44px; line-height: 44px;}
 	.sub-title { font-size: 25px; line-height: 25px; margin-top: 20px; }
+	.logo{margin-top: 0;}
 	/* SIZES */
 	.sphere img{
 		-webkit-transform: scale(1);
@@ -760,8 +786,8 @@ h2 {
 
 @media all and (min-width: 1400px) {
 	/* HERO */
-	h1 { font-size: 160px; line-height: 160px; }
-	.sub-title { font-size: 25px; line-height: 25px; margin-top: 20px; }
+	h1 { font-size: 80px; line-height: 80px; }
+	.sub-title { font-size: 25px; line-height: 25px; margin-top: 30px; }
 	/* POSITIONING */
 	.depth-5 {
 		right: -10%;
@@ -1030,6 +1056,8 @@ h2 {
 
 
 @media all and (min-width: 700px) {
+	.title h2{font-size: 24px;}
+	.contact{font-size: 20px;}
 	.button {
 		font-size: 12px;
 		border-radius: 10px;
