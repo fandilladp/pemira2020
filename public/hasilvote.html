@@ -30,6 +30,9 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/timline.css" rel="stylesheet">
 
+    <link href="sb-admin/utama/css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -53,7 +56,7 @@
                         </ul>
                     </li>
                     <li class="active"><a href="votemenu.html">E-Vote</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li ><a href="contact.html">Contact Us</a></li>
                     <li><a href="report.html">Report</a></li>
                 </ul>
             </nav>
@@ -67,35 +70,58 @@
         <!-- copy dari about us -->
 
         <!-- ======= Features Section ======= -->
-        <section id="features" class="section-bg">
+        <section id="features" class="features section-bg">
             <div class="container" data-aos="fade-up">
-                <div class="card-group">
-                    <div class="card m-2" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">List Link Zoom</h5>
-                            <p class="card-text">silahkan masuk ke link zoom sesuai sesi anda
-                            </p>
-                            <a href="listzoom.html" class="btn btn-primary">Go</a>
+                <a href="http://pemira.km.itera.ac.id/hasilvote"><button class="my-2 text-align-center btn btn-primary btn-xl">Hasil Perolehan Suara Kandidat</button></a>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-bar mr-1"></i>
+                                Day 1 
+                            </div>
+                            <div class="card-body"><canvas id="day1bar" width="100%" height="50"></canvas></div>
+                            <div class="card-footer small text-muted">Updated Saturday at 18:00 PM</div>
                         </div>
                     </div>
-                    <div class="card m-2" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Voting</h5>
-                            <p class="card-text">Masuk ke menu dashboard e-vote
-                            </p>
-                            <a href="http://pemira.km.itera.ac.id" class="btn btn-primary">Go</a>
-                        </div>
-                    </div>
-                    <div class="card m-2" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Hasil Vote</h5>
-                            <p class="card-text">Masuk ke menu dashboard Hasil Vote
-                            </p>
-                            <a href="hasilvote.html" class="btn btn-primary">Go</a>
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-user mr-1"></i> 
+                                Saksi
+                            </div>
+                            <div class="card-body"><canvas id="myPieChart" width="100%" height="100">
+
+                            </canvas></div>
+                            <div class="card-footer small text-muted">Updated Saturday at 18:00 PM</div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- day 2 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-bar mr-1"></i>
+                                Day 2
+                            </div>
+                            <div class="card-body"><canvas id="day2bar" width="100%" height="50"></canvas></div>
+                            <div class="card-footer small text-muted">Updated Sunday at 18:00 PM</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-user mr-1"></i> 
+                                Saksi
+                            </div>
+                            <div class="card-body"><canvas id="myPieChart" width="100%" height="50">
+
+                            </canvas></div>
+                            <div class="card-footer small text-muted">Updated Sunday at 18:00 PM</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section><!-- End Features Section -->
 
@@ -123,10 +149,12 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-
+    
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <script src="sb-admin/utama/js/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="sb-admin/utama/assets/demo/chart-bar-demo.js"></script>
 </body>
 <script src="https://use.fontawesome.com/6fc4193475.js"></script>
 
