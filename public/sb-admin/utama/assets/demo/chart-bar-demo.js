@@ -7,12 +7,12 @@ var ctx = document.getElementById("day1bar");
 var myLineChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["Teknik Informatika", "Teknik Elektro", "Teknik Biomedis", "Teknik Kimia", "Teknik Pangan", "Rekayasa Kehutanan", "Teknik Industri Pertanian", " Teknik Biosistem", "Teknik Industri", "Teknik Geologi", "Teknik Pertambangan", "Teknik Material", "Teknik Geofisika", "Teknik Mesin"],
+    labels: ["Teknik Informatika", "Teknik Elektro", "Teknik Biomedis", "Teknik Kimia", "Teknik Pangan", "Rekayasa Kehutanan", "Teknik Industri Pertanian", " Teknik Biosistem", "Teknik Industri", "Teknik Geologi", "Teknik Pertambangan", "Teknik Material", "Teknik Geofisika", "Teknik Mesin", "Teknik Telekomunikasi", "Teknik Sistem Energi", "Teknik Fisika"],
     datasets: [{
       label: "Pemilih",
       backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      data: [63, 107, 21, 57, 71, 32, 21, 19, 72, 39, 32, 11, 70,22],
+      data: [160, 205, 36, 160, 130, 63, 103, 61, 154, 93, 65, 45, 149, 93, 57, 89, 44],
     }],
   },
   
@@ -26,13 +26,13 @@ var myLineChart = new Chart(ctx, {
           display: true
         },
         ticks: {
-          maxTicksLimit: 15
+          maxTicksLimit: 20
         }
       }],
       yAxes: [{
         ticks: {
           min: 0,
-          max: 500,
+          max: 300,
           maxTicksLimit: 10
         },
         gridLines: {
