@@ -45,3 +45,45 @@ var myLineChart = new Chart(ctx, {
     }
   }
 });
+var day2 = document.getElementById("day2bar");
+var myLineChart = new Chart(day2, {
+  type: 'bar',
+  data: {
+    labels: ["Farmasi", "Matematika", "Kimia", "SAK", "Fisika", "Biologi", "Sains Aktuaria", "Sains Data", "Sains Lingkungan Kelautan", "Teknik Sipil", "PWK", "Arsitektur", "Teknik Lingkungan", "Teknik Geomatika", "Teknik Kelautan", "DKV", "Arsitektur Lanskap", "Teknik Perkeretaapian"],
+    datasets: [{
+      label: "Pemilih",
+      backgroundColor: "rgb(244, 133, 14)",
+      borderColor: "rgba(244,133,14,1)",
+      data: [229, 252, 118, 102, 56, 78, 116, 61, 38, 529, 205, 177, 254, 307, 54, 44, 10, 30],
+    }],
+  },
+  
+  options: {
+    scales: {
+      xAxes: [{
+        time: {
+          unit: 'User'
+        },
+        gridLines: {
+          display: true
+        },
+        ticks: {
+          maxTicksLimit: 20
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 550,
+          maxTicksLimit: 10
+        },
+        gridLines: {
+          display: true
+        }
+      }],
+    },
+    legend: {
+      display: false
+    }
+  }
+});
