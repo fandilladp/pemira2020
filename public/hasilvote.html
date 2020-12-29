@@ -31,7 +31,8 @@
     <link href="assets/css/timline.css" rel="stylesheet">
 
     <link href="sb-admin/utama/css/styles.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous">
+    </script>
 
 </head>
 
@@ -56,7 +57,7 @@
                         </ul>
                     </li>
                     <li class="active"><a href="votemenu.html">E-Vote</a></li>
-                    <li ><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="report.html">Report</a></li>
                 </ul>
             </nav>
@@ -72,28 +73,48 @@
         <!-- ======= Features Section ======= -->
         <section id="features" class="features section-bg">
             <div class="container" data-aos="fade-up">
-                <a href="http://pemira.km.itera.ac.id/hasilvote"><button class="my-2 text-align-center btn btn-primary btn-xl">Hasil Perolehan Suara Kandidat</button></a>
+                <!-- Button trigger modal -->
+                
+                <section id="call-to-action" class="call-to-action">
+                    <div class="container" data-aos="zoom-out">
+                      <div class="row">
+                        <div class="col-lg-6 text-center text-lg-left">
+                          <h3 class="cta-title">Total Suara Masuk 5170 Mahasiswa aktif ITERA</h3>
+                        </div>
+                        <div class="col-lg-3 cta-btn-container text-center">
+                          <a class="cta-btn align-middle" href="http://pemira.km.itera.ac.id/hasilvote">Hasil Perolehan Suara
+                            Kandidat</a>
+                        </div>
+                        <div class="col-lg-3 cta-btn-container text-center">
+                       <a class="cta-btn align-middle"  data-toggle="modal" data-target="#exampleModal">
+                            Kritik & Saran Sistem E-vote
+                       </a>
+                    </div>
+                      </div>
+              
+                    </div>
+                  </section><!--  End Call To Action Section -->
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-chart-bar mr-1"></i>
-                                Day 1 
+                                Day 1
                             </div>
                             <div class="card-body"><canvas id="day1bar" width="100%" height="50"></canvas></div>
-                            <div class="card-footer small text-muted">Updated Saturday at 18:00 PM</div>
+                            <div class="card-footer small text-muted">Updated 27 Dec 2020 at 18:00 PM</div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="card mb-4">
                             <div class="card-header">
-                                <i class="fas fa-user mr-1"></i> 
+                                <i class="fas fa-user mr-1"></i>
                                 Saksi
                             </div>
                             <div class="card-body">
                                 <img class="img-fluid" src="assets/img/saksi day1.jpeg" alt="Saksiday1">
                             </div>
-                            <div class="card-footer small text-muted">Updated Saturday at 18:00 PM</div>
+                            <div class="card-footer small text-muted">Updated 27 Dec 2020 at 18:00 PM</div>
                         </div>
                     </div>
                 </div>
@@ -106,19 +127,54 @@
                                 Day 2
                             </div>
                             <div class="card-body"><canvas id="day2bar" width="100%" height="50"></canvas></div>
-                            <div class="card-footer small text-muted">Updated Sunday at 18:00 PM</div>
+                            <div class="card-footer small text-muted">Updated 28 Dec 2020 at 18:00 PM</div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="card mb-4">
                             <div class="card-header">
-                                <i class="fas fa-user mr-1"></i> 
+                                <i class="fas fa-user mr-1"></i>
                                 Saksi
                             </div>
-                            <div class="card-body"><canvas id="myPieChart" width="100%" height="50">
-
-                            </canvas></div>
-                            <div class="card-footer small text-muted">Updated Sunday at 18:00 PM</div>
+                            <div class="card-body">
+                                <img class="img-fluid" src="assets/img/saksi day2.jpeg" alt="Saksiday2">
+                            </div>
+                            <div class="card-footer small text-muted">Updated 28 Dec 2020 at 18:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- day 3 -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-bar mr-1"></i>
+                                Day 3 Extra Time Sesi 1
+                            </div>
+                            <div class="card-body"><canvas id="day3bar1" width="100%" height="50"></canvas></div>
+                            <div class="card-footer small text-muted">Updated 29 Dec 2020 at 18:00 PM</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-bar mr-1"></i>
+                                Day 3 Extra Time Sesi 2
+                            </div>
+                            <div class="card-body"><canvas id="day3bar2" width="100%" height="50"></canvas></div>
+                            <div class="card-footer small text-muted">Updated 29 Dec 2020 at 18:00 PM</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-user mr-1"></i>
+                                Saksi
+                            </div>
+                            <div class="card-body">
+                                <img class="img-fluid" src="assets/img/saksi day3.jpeg" alt="Saksiday3">
+                            </div>
+                            <div class="card-footer small text-muted">Updated 29 Dec 2020 at 18:00 PM</div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +205,7 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
@@ -159,3 +215,23 @@
 <script src="https://use.fontawesome.com/6fc4193475.js"></script>
 
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pemira 2020</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdZzFFo9GJcx2HFgAugCItQY71cdBVGpzGMjkrrylIyd4LSJg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

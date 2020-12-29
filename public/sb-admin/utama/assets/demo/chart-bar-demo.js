@@ -87,3 +87,89 @@ var myLineChart = new Chart(day2, {
     }
   }
 });
+var day3 = document.getElementById("day3bar1");
+var myLineChart = new Chart(day3, {
+  type: 'bar',
+  data: {
+    labels: ["Teknik Informatika", "Teknik Elektro", "Teknik Biomedik", "Teknik Kimia", "Teknik Pangan", "Rekayasa Kehutanan", "Teknik Industri Pertanian", " Teknik Biosistem", "Teknik Industri", "Teknik Geologi", "Teknik Pertambangan", "Teknik Material", "Teknik Geofisika", "Teknik Mesin", "Teknik Telekomunikasi", "Teknik Sistem Energi", "Teknik Fisika"],
+    datasets: [{
+      label: "Pemilih",
+      backgroundColor: "rgb(12, 242, 211)",
+      borderColor: "rgb(12, 242, 211,1)",
+      data: [55, 69, 27, , 33, 15, 4, 19, 6, 37, 16, 10, 86, 19, 7, 34, 63, 13],
+    }],
+  },
+  
+  options: {
+    scales: {
+      xAxes: [{
+        time: {
+          unit: 'User'
+        },
+        gridLines: {
+          display: true
+        },
+        ticks: {
+          maxTicksLimit: 20
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 90,
+          maxTicksLimit: 10
+        },
+        gridLines: {
+          display: true
+        }
+      }],
+    },
+    legend: {
+      display: false
+    }
+  }
+});
+var day3 = document.getElementById("day3bar2");
+var myLineChart = new Chart(day3, {
+  type: 'bar',
+  data: {
+    labels: ["Farmasi", "Matematika", "Kimia", "SAK", "Fisika", "Biologi", "Sains Aktuaria", "Sains Data", "Sains Lingkungan Kelautan", "Teknik Sipil", "PWK", "Arsitektur", "Teknik Lingkungan", "Teknik Geomatika", "Teknik Kelautan", "DKV", "Arsitektur Lanskap", "Teknik Perkeretaapian"],
+    datasets: [{
+      label: "Pemilih",
+      backgroundColor: "rgb(12, 242, 211)",
+      borderColor: "rgb(12, 242, 211,1)",
+      data: [34, 23, 10, 17, 6, 5, 21, 6, 1, 49, 16, 13, 14, 15, 3, 18, 38, 1],
+    }],
+  },
+  
+  options: {
+    scales: {
+      xAxes: [{
+        time: {
+          unit: 'User'
+        },
+        gridLines: {
+          display: true
+        },
+        ticks: {
+          maxTicksLimit: 20
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 50,
+          maxTicksLimit: 10
+        },
+        gridLines: {
+          display: true
+        }
+      }],
+    },
+    legend: {
+      display: false
+    }
+  }
+});
+
+
